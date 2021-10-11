@@ -9,69 +9,80 @@
 </head>
 
 <body>
+
     <h1>Borang Pendaftaran</h1>
-    <hr <form action="simpan.php" method="post">
+    <form action="simpan.php" method="post">
+        <table>
 
+            <tr>
+                <td><label for="nama">Nama:</label></td>
+                <td><input type="text" name="nama" id="nama" size="25" required placeholder="Sila Isi Nama Penuh"
+                        autofocus autocomplete="on"></td>
+            </tr>
+            <tr>
+                <td><label for="namakeluarga">Nama Ibu/Bapa:</label></td>
+                <td><input type="text" name="namakeluarga" id="namakeluarga" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Alamat:</label></td>
+                <td><input type="text" name="alamat" id="alamat" size="25" required placeholder="Sila Isi Alamat Semasa"
+                        autofocus autocomplete="on"></td>
+            </tr>
+            <tr>
+                <td><label for="notelefon">No Telefon:</label></td>
+                <td><input type="text" name="notelefon" id="notelefon" size="25" minlength="10" maxlength="11"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Jantina:</label>
+                    <br>
+                    <input type="radio" id="lelaki" name="jantina" value="lelaki">
+                    <label for="lelaki">Lelaki</label>
+                    <br>
+                    <input type="radio" id="perempuan" name="jantina" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Negeri:</td>
+                <td>
+                    <input type="text" name="negeri" id="negeri" list="senarai" size="25">
+                    <datalist id="senarai">
+                        <option value="Perlis">
+                        <option value="Kedah">
+                        <option value="Penang">
+                        <option value="Pahang">
+                        <option value="Sabah">
+                        <option value="Sarawak">
+                        <option value="Selangor">
+                        <option value="Kelantan">
+                        <option value="Terengganu">
+                        <option value="Kuala Lumpur">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="semester">Semester:</label>
+                    <select name="semester" id="semester">
+                        <option value="sem1">Sem 1</option>
+                        <option value="sem2">Sem 2</option>
+                        <option value="sem3">Sem 3</option>
+                        <option value="sem4">Sem 4</option>
+                        <option value="sem5">Sem 5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
 
-    <tr>
-        <td><label for="nama">Nama:</label></td>
-        <td><input type="text" name="nama" id="nama" size="35" required placeholder="Sila Isi Nama Penuh" autofocus
-                autocomplete="on"></td>
-    </tr><br><br>
-    <tr>
-        <td><label for="namakeluarga">Nama Ibu/Bapa:</label></td>
-        <td><input type="text" name="namakeluarga" id="namakeluarga" size="35"></td>
-    </tr><br><br>
-    <tr>
-        <td><label for="nama">Alamat:</label></td>
-        <td><input type="text" name="alamat" id="alamat" size="100" required placeholder="Sila Isi Alamat Semasa"
-                autofocus autocomplete="on"></td>
-    </tr><br><br>
-    <tr>
-        <td><label for="notelefon">No Telefon:</label></td>
-        <td><input type="text" name="notelefon" id="notelefon" minlength="10" maxlength="11"></td>
-    </tr><br><br>
-    <label>Jantina:</label>
-    <br>
-    <input type="radio" id="lelaki" name="jantina" value="lelaki">
-    <label for="lelaki">Lelaki</label>
-    <br>
-    <input type="radio" id="perempuan" name="jantina" value="perempuan">
-    <label for="perempuan">Perempuan</label>
-    <br><br>
-    <tr>
-        <td>Negeri:</td>
-        <td>
-            <input type="text" name="negeri" id="negeri" list="senarai" size="15">
-            <datalist id="senarai">
-                <option value="Perlis">
-                <option value="Kedah">
-                <option value="Penang">
-                <option value="Pahang">
-                <option value="Sabah">
-                <option value="Sarawak">
-                <option value="Selangor">
-                <option value="Kelantan">
-                <option value="Terengganu">
-                <option value="Kuala Lumpur">
-            </datalist>
-        </td><br><br>
-    </tr>
-    <label for="semester">Semester:</label>
-    <select name="semester" id="semester">
-        <option value="sem1">Sem 1</option>
-        <option value="sem2">Sem 2</option>
-        <option value="sem3">Sem 3</option>
-        <option value="sem4">Sem 4</option>
-        <option value="sem5">Sem 5</option>
-    </select>
-    <br><br> </table>
-    <label for="pwd">Password:</label>
-    <input type="password" id="pwd" name="pwd" size="10">
-    <br><br>
+                <td><label for="pwd">Password:</label></td>
+                <td><input type="password" id="pwd" name="pwd" size="25"></td>
 
-    <button type="sumbit">SUMBIT</button>
-    <button type="reset">BATAL</button>
+            </tr>
+
+        </table>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">BATAL</button>
     </form>
 
 
