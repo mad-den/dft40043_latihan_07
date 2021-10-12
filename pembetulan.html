@@ -16,21 +16,21 @@
 
             <tr>
                 <td><label for="nama">Nama:</label></td>
-                <td><input type="text" name="nama" id="nama" size="25" required placeholder="Sila Isi Nama Penuh"
+                <td><input type="text" name="nama" id="nama" size="50" required placeholder="Sila Isi Nama Penuh"
                         autofocus autocomplete="on"></td>
             </tr>
             <tr>
                 <td><label for="namakeluarga">Nama Ibu/Bapa:</label></td>
-                <td><input type="text" name="namakeluarga" id="namakeluarga" size="25"></td>
+                <td><input type="text" name="namakeluarga" id="namakeluarga" size="50"></td>
             </tr>
             <tr>
-                <td><label for="nama">Alamat:</label></td>
-                <td><input type="text" name="alamat" id="alamat" size="25" required placeholder="Sila Isi Alamat Semasa"
-                        autofocus autocomplete="on"></td>
+                <td><label for="alamat">Alamat:</label></td>
+                <td><textarea type="text" name="alamat" id="alamat" size="50" required
+                        placeholder="Sila Isi Alamat Semasa" autofocus autocomplete="on"></textarea></td>
             </tr>
             <tr>
                 <td><label for="notelefon">No Telefon:</label></td>
-                <td><input type="text" name="notelefon" id="notelefon" size="25" minlength="10" maxlength="11"></td>
+                <td><input type="text" name="notelefon" id="notelefon" size="50" minlength="10" maxlength="11"></td>
             </tr>
             <tr>
                 <td>
@@ -38,7 +38,7 @@
                     <br>
                     <input type="radio" id="lelaki" name="jantina" value="lelaki">
                     <label for="lelaki">Lelaki</label>
-                    <br>
+
                     <input type="radio" id="perempuan" name="jantina" value="perempuan">
                     <label for="perempuan">Perempuan</label>
                 </td>
@@ -46,7 +46,7 @@
             <tr>
                 <td>Negeri:</td>
                 <td>
-                    <input type="text" name="negeri" id="negeri" list="senarai" size="25">
+                    <input type="text" name="negeri" id="negeri" list="senarai" size="50">
                     <datalist id="senarai">
                         <option value="Perlis">
                         <option value="Kedah">
@@ -81,6 +81,7 @@
             </tr>
 
         </table>
+        <input type="hidden" name="tarikh" value="12 Oktober 2021">
         <button type="submit">SUBMIT</button>
         <button type="reset">BATAL</button>
     </form>
